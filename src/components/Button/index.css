@@ -1,0 +1,128 @@
+:root {
+    --primary: #4628ff;
+    --warning: #ffd028;
+    --danger: #eb3f27;
+    --succes: #75fa83;
+    --white: #fdfdfd;
+    --dark: #181717;
+
+    --border-radius: 0.625em;
+}
+
+.btn {
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    border-radius: var(--border-radius);
+    transition: transform 300ms ease;
+}
+
+.btn:hover {
+    cursor: pointer;
+    transform: translateY(-3px);
+}
+
+/* Button Colors & Styles */
+
+.btn--primary--solid {
+    background-color: var(--primary);
+    color: var(--white);
+    border: none;
+}
+
+.btn--primary--outline {
+    background-color: transparent;
+    color: var(--primary);
+    border: 2px solid var(--primary);
+}
+
+.btn--warning--solid {
+    background-color: var(--warning);
+    color: var(--dark);
+    border: none;
+}
+
+.btn--warning--outline {
+    background-color: transparent;
+    color: var(--dark);
+    border: 2px solid var(--warning);
+}
+
+.btn--danger--solid {
+    background-color: var(--danger);
+    color: var(--white);
+    border: none;
+}
+
+.btn--danger--outline {
+    background-color: transparent;
+    color: var(--danger);
+    border: 2px solid var(--danger);
+}
+
+.btn--succes--solid {
+    background-color: var(--succes);
+    color: var(--white);
+    border: none;
+}
+
+.btn--succes--outline {
+    background-color: transparent;
+    color: var(--succes);
+    border: 2px solid var(--succes);
+}
+
+/* Button Sizes */
+.btn--small {
+    font-size: 1em;
+    padding: 0.75rem 1.5rem;
+}
+
+.btn--medium {
+    font-size: 1.25em;
+    padding: 1rem 2rem;
+}
+
+.btn--large {
+    font-size: 1.5em;
+    padding: 1.25rem 2.5rem;
+}
+
+/* Button Stretched */
+.btn--fit-content {
+    width: fit-content;
+}
+
+.btn--stretched {
+    width: 100%;
+}
+
+/* Button Icon */
+svg {
+    /*display: inline-flex;*/
+    font-size: 32px;
+    color: red;
+
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+}
+
+svg path {
+    /*display: inline-flex;*/
+}
+
+/*.icon {
+    display: inline-flex;
+    align-self: center;
+}
+
+.icon svg, .icon img {
+    height: 1em;
+    width: 1em;
+    fill: currentColor;
+}
+
+.icon.baseline svg, .icon img {
+    top: .125em;
+    position: relative;
+}*/
