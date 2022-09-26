@@ -1,10 +1,9 @@
-import React from 'react';
-import './index.css'
-import { ReactComponent as ArrowForward } from '@material-symbols/svg-400/outlined/arrow_forward.svg';
+import React from "react";
+import "./index.css";
+import "material-symbols";
 
 
-
-function Index( { children, type, onClick, icon, variant, size, stretched } ) {
+function Index( { children, type, onClick, icon, variant, size, stretched, position } ) {
 
     const STYLES = [
         "btn--primary--solid",
@@ -14,19 +13,19 @@ function Index( { children, type, onClick, icon, variant, size, stretched } ) {
         "btn--danger--solid",
         "btn--danger--outline",
         "btn--succes--solid",
-        "btn--succes--outline",
+        "btn--succes--outline"
     ];
 
     const SIZES = [
         "btn--small",
         "btn--medium",
         "btn--large"
-    ]
+    ];
 
     const STRETCHED = [
         "btn--fit-content",
         "btn--stretched"
-    ]
+    ];
 
     const setButtonVariant = STYLES.includes( variant )
         ? variant
@@ -39,17 +38,21 @@ function Index( { children, type, onClick, icon, variant, size, stretched } ) {
     const setButtonStretch = STRETCHED.includes( stretched )
         ? stretched
         : STRETCHED[0];
-
+        
     return (
         <button
             className={ `btn ${ setButtonVariant } ${ setButtonSize } ${ setButtonStretch }` }
             type={ type }
             onClick={ onClick }
         >
+            { position === "icon--left"
+                && <span className="material-symbols-outlined">{ icon }</span>
+            }
             { children }
-            <div className={`icon baseline`}>
-            <ArrowForward />
-            </div>
+            { position === "icon--right"
+                && <span className="material-symbols-outlined">{ icon }</span>
+            }
+
         </button>
     );
 }

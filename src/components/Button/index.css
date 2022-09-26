@@ -1,18 +1,15 @@
-:root {
-    --primary: #4628ff;
-    --warning: #ffd028;
-    --danger: #eb3f27;
-    --succes: #75fa83;
-    --white: #fdfdfd;
-    --dark: #181717;
 
-    --border-radius: 0.625em;
-}
+/* Button Style */
 
 .btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
     font-family: Poppins, sans-serif;
     font-weight: 400;
-    border-radius: var(--border-radius);
+    border-radius: var(--border);
     transition: transform 300ms ease;
 }
 
@@ -21,7 +18,7 @@
     transform: translateY(-3px);
 }
 
-/* Button Colors & Styles */
+/* Button Variants */
 
 .btn--primary--solid {
     background-color: var(--primary);
@@ -72,6 +69,7 @@
 }
 
 /* Button Sizes */
+
 .btn--small {
     font-size: 1em;
     padding: 0.75rem 1.5rem;
@@ -88,6 +86,7 @@
 }
 
 /* Button Stretched */
+
 .btn--fit-content {
     width: fit-content;
 }
@@ -95,34 +94,3 @@
 .btn--stretched {
     width: 100%;
 }
-
-/* Button Icon */
-svg {
-    /*display: inline-flex;*/
-    font-size: 32px;
-    color: red;
-
-    width: 1em;
-    height: 1em;
-    fill: currentColor;
-}
-
-svg path {
-    /*display: inline-flex;*/
-}
-
-/*.icon {
-    display: inline-flex;
-    align-self: center;
-}
-
-.icon svg, .icon img {
-    height: 1em;
-    width: 1em;
-    fill: currentColor;
-}
-
-.icon.baseline svg, .icon img {
-    top: .125em;
-    position: relative;
-}*/

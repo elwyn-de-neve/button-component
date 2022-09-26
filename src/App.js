@@ -8,9 +8,11 @@ function App() {
                 onClick={ (  ) => {
                     console.log('Clicked') } }
                 type="button"
-                variant="btn--warning--solid"
-                size="btn--medium"
-                stretched="btn--stretched"
+                // variant="btn--danger--outline" // "btn--primary--solid" || "btn--primary--outline" || "btn--warning--solid" || "btn--warning--outline" || "btn--danger--solid" || "btn--danger--outline" || "btn--succes--solid" || "btn--succes--outline"
+                // size="btn--medium" // "btn--small" || "btn--medium" || "btn--large"
+                // stretched="btn--stretched" // "btn--fit-content" || "btn--stretched"
+                // icon="arrow_forward" // Place the name of icon here. For icon names check: https://fonts.google.com/icons
+                // position="icon--right" // "icon--right" || "icon--left"
             >Versturen</Button>
         </div>
     );
